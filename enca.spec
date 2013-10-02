@@ -1,11 +1,11 @@
 Summary:	Extremely Naive Charset Analyser
 Name:		enca
-Version:	1.14
+Version:	1.15
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://dl.cihar.com/enca/%{name}-%{version}.tar.bz2
-# Source0-md5:	03792f25aed003d3ea33b3ce1be1f256
+# Source0-md5:	fef132969d26e649719eae08297a4a52
 Patch0:		%{name}-libdir.patch
 URL:		http://freshmeat.net/projects/enca/
 BuildRequires:	autoconf
@@ -92,7 +92,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.devel
 %attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
 %{_includedir}/*.h
 %{_pkgconfigdir}/*.pc
 
