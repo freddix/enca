@@ -1,7 +1,7 @@
 Summary:	Extremely Naive Charset Analyser
 Name:		enca
 Version:	1.15
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries
 Source0:	http://dl.cihar.com/enca/%{name}-%{version}.tar.bz2
