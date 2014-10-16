@@ -67,6 +67,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
+
 rm -f $RPM_BUILD_ROOT%{_mandir}/man1/enconv.1
 echo '.so enca.1' > $RPM_BUILD_ROOT%{_mandir}/man1/enconv.1
 
